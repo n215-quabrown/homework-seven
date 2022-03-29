@@ -1,5 +1,5 @@
 .offerContent {
-    width: $siteWidth;
+    max-width: $siteWidth;
     margin: 60px auto 0 auto;
     h1 {
         font-family: ProximaNovaSC;
@@ -17,7 +17,7 @@
             margin-right: 20px;
         }
         .text {
-            width: 331px;
+            max-width: 331px;
             display: flex;
             flex-wrap: wrap;
             align-items: baseline;
@@ -33,7 +33,7 @@
                 color: $siteOrange;
             }
             p {
-                width: 290px;
+                max-width: 290px;
             }
             .button {
                 width: 133px;
@@ -49,5 +49,11 @@
                 font-size: 15px;
             }
         }
+    }
+}
+
+@media screen and (max-width: $siteWidth) {
+    .offerContent {
+        padding: 0 20px;
     }
 }

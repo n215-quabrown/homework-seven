@@ -505,7 +505,7 @@ footer .icons {
   }
 }
 .offerContent {
-  width: 980px;
+  max-width: 980px;
   margin: 60px auto 0 auto;
 }
 .offerContent h1 {
@@ -525,7 +525,7 @@ footer .icons {
   margin-right: 20px;
 }
 .offerContent .offer .text {
-  width: 331px;
+  max-width: 331px;
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
@@ -542,7 +542,7 @@ footer .icons {
   color: #FF7D38;
 }
 .offerContent .offer .text p {
-  width: 290px;
+  max-width: 290px;
 }
 .offerContent .offer .text .button {
   width: 133px;
@@ -558,8 +558,13 @@ footer .icons {
   font-size: 15px;
 }
 
+@media screen and (max-width: 980px) {
+  .offerContent {
+    padding: 0 20px;
+  }
+}
 .blogContent {
-  width: 980px;
+  max-width: 980px;
   margin: 60px auto 0 auto;
 }
 .blogContent h1 {
@@ -572,6 +577,7 @@ footer .icons {
   display: flex;
   margin-bottom: 100px;
   justify-content: space-between;
+  max-width: 980px;
 }
 .blogContent .post .date {
   font-family: GillSans;
@@ -583,6 +589,7 @@ footer .icons {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-right: 10px;
 }
 .blogContent .post .date h5 {
   font-size: 22px;
@@ -594,11 +601,11 @@ footer .icons {
   margin: 0;
 }
 .blogContent .post .preview {
-  width: 900px;
+  width: 100%;
   font-family: GillSans;
 }
 .blogContent .post .preview .postHero {
-  width: 900px;
+  width: 100%;
   height: 259px;
   background-image: url(../images/blog.jpg);
   background-position: center;
@@ -612,11 +619,16 @@ footer .icons {
 .blogContent .post .preview p {
   font-size: 13px;
   color: #79ADDC;
-  width: 380px;
+  max-width: 380px;
 }
 
+@media screen and (max-width: 980px) {
+  .blogContent {
+    padding: 0 20px;
+  }
+}
 .contactContent {
-  width: 980px;
+  max-width: 980px;
   margin: 60px auto 0 auto;
 }
 .contactContent h1 {
@@ -649,9 +661,10 @@ footer .icons {
 .contactContent .sideBySide .contactForm {
   display: flex;
   flex-direction: column;
+  width: 529px;
 }
 .contactContent .sideBySide .contactForm input {
-  width: 529px;
+  width: 100%;
   height: 60px;
   margin-bottom: 21px;
   padding: 20px;
@@ -659,7 +672,7 @@ footer .icons {
   background-color: #F5F5F5;
 }
 .contactContent .sideBySide .contactForm textarea {
-  width: 529px;
+  width: 100%;
   height: 199px;
   margin-bottom: 21px;
   padding: 20px;
@@ -677,6 +690,30 @@ footer .icons {
   text-decoration: none;
   font-family: GillSans;
   font-size: 16px;
+}
+
+@media screen and (max-width: 980px) {
+  .contactContent {
+    padding: 0 20px;
+  }
+  .contactContent .contactForm {
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 880px) {
+  .contactContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contactContent .sideBySide {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contactContent .sideBySide .contactForm {
+    margin-top: 34px;
+    width: 400px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
