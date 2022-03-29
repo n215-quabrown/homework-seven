@@ -1,0 +1,73 @@
+.tourTemplate {
+    .banner {
+        max-width: $siteWidth;
+        height: 413px;
+        margin: 49px auto 19px auto;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: $siteWhite;
+        font-family: ProximaNovaSC;
+        position: relative;
+        h1 {
+            font-size: 80px;
+            margin: 30px;
+        }
+        h6 {
+            position: absolute;
+            right: 5px;
+            bottom: -16px;
+            font-size: 30px;
+            text-align: right;
+        }
+    }
+    .triad {
+        display: flex;
+        max-width: $siteWidth;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        img {
+            width: 298px;
+            height: 347px;
+            margin: 14px;
+        }
+    }
+    .travelPlan {
+        max-width: $siteWidth;
+        margin: 0 auto;
+        h2 {
+            font-family: ProximaNovaSC;
+            font-size: 60px;
+            text-decoration: underline 2px;
+            text-underline-offset: 15px;
+        }
+        p {
+            font-family: GillSans;
+            font-size: 16px;
+            margin-bottom: 80px;
+        }
+        .button {
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $siteBlue;
+            width: 133px;
+            height: 40px;
+            border-radius: 20px;
+            color: $siteWhite;
+            text-decoration: none;
+            font-family: GillSans;
+            font-size: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: $siteWidth) {
+    .tourTemplate {
+        .travelPlan {
+            padding: 0 10px;
+        }
+    }
+}

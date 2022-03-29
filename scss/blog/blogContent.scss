@@ -1,0 +1,56 @@
+.blogContent {
+    width: $siteWidth;
+    margin: 60px auto 0 auto;
+    h1 {
+        font-family: ProximaNovaSC;
+        font-size: 30px;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+    }
+    .post {
+        display: flex;
+        margin-bottom: 100px;
+        justify-content: space-between;
+        .date {
+            font-family: GillSans;
+            color: $siteWhite;
+            background-color: $siteBlue;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            h5 {
+                font-size: 22px;
+                font-style: bold;
+                margin: 0;
+            }
+            h6 {
+                font-size: 12px;
+                margin: 0;
+            }
+        }
+        .preview {
+            width: 900px;
+            font-family: GillSans;
+            .postHero {
+                width: 900px;
+                height: 259px;
+                background-image: url(../images/blog.jpg);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            h2 {
+                margin-top: 20px;
+                font-size: 15px;
+            }
+            p {
+                font-size: 13px;
+                color: $siteBlue;
+                width: 380px;
+            }
+        }
+    }
+}

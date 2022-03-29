@@ -1,0 +1,53 @@
+.offerContent {
+    width: $siteWidth;
+    margin: 60px auto 0 auto;
+    h1 {
+        font-family: ProximaNovaSC;
+        font-size: 30px;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        margin-bottom: 43px;
+    }
+    .offer {
+        display: flex;
+        margin-bottom: 60px;
+        img {
+            width: 199px;
+            height: 287px;
+            margin-right: 20px;
+        }
+        .text {
+            width: 331px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            h2 {
+                font-family: ProximaNovaSC;
+                font-size: 30px;
+                text-decoration: underline;
+                text-underline-offset: 5px;
+            }
+            h3 {
+                font-family: ProximaNovaSC;
+                font-size: 20px;
+                color: $siteOrange;
+            }
+            p {
+                width: 290px;
+            }
+            .button {
+                width: 133px;
+                height: 40px;
+                background-color: $siteBlue;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $siteWhite;
+                text-decoration: none;
+                font-family: GillSans;
+                font-size: 15px;
+            }
+        }
+    }
+}

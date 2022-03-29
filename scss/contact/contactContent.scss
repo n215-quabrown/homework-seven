@@ -1,0 +1,63 @@
+.contactContent {
+    width: $siteWidth;
+    margin: 60px auto 0 auto;
+    h1 {
+        font-family: ProximaNovaSC;
+        font-size: 30px;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        margin-bottom: 58px;
+    }
+    .sideBySide{
+        display: flex;
+        justify-content: space-between;
+        .mapInfo {
+            width: 400px;
+            .map {
+                width: 400px;
+                height: 442px;
+                background-image: url(../images/map.png);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin-bottom: 34px;
+            }
+            .address {
+                font-family: GillSans;
+                font-size: 18px;
+            }
+        }
+        .contactForm {
+            display: flex;
+            flex-direction: column;
+            input {
+                width: 529px;
+                height: 60px;
+                margin-bottom: 21px;
+                padding: 20px;
+                border: none;
+                background-color: #F5F5F5;
+            }
+            textarea {
+                width: 529px;
+                height: 199px;
+                margin-bottom: 21px;
+                padding: 20px;
+                border: none;
+                background-color: #F5F5F5;
+            }
+            .button {
+                width: 167px;
+                height: 60px;
+                background-color: $siteBlue;
+                color: $siteWhite;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                font-family: GillSans;
+                font-size: 16px;
+            }
+        }
+    }
+}
